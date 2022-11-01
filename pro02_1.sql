@@ -28,3 +28,4 @@ insert into notice(title, content, author) values("테스트 제목5","테스트
 commit;
 
 select * from notice order by notiNo desc;
+select * from notice;

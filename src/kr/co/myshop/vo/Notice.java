@@ -1,11 +1,11 @@
 package kr.co.myshop.vo;
-
+//공지사항 클래스
 public class Notice {
-	private int notiNo;
-	private String title;
-	private String content;
-	private String author;
-	private String regdate;
+	private int notiNo;	//공지사항번호
+	private String title;	//제목
+	private String content;	//내용
+	private String author;	//작성자
+	private String regdate;	//작성일
 	
 	public int getNotiNo() {
 		return notiNo;

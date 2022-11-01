@@ -1,5 +1,5 @@
 package kr.co.myshop.vo;
-//Product -> ProductVO
+//제품 클래스
 public class Product {
 	private int proNo;	//상품번호
 	private int cateNo;	//카테고리 분류

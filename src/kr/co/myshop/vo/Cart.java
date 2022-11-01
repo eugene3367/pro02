@@ -1,10 +1,10 @@
 package kr.co.myshop.vo;
-//장바구니
+//장바구니 클래스
 public class Cart {
-	private int cartNo;
-	private String cusId;
-	private int proNo;
-	private int amount;
+	private int cartNo;	//장바구니번호
+	private String cusId;	//고객아이디
+	private int proNo;	//상품번호
+	private int amount;	//수량
 	
 	public int getCartNo() {
 		return cartNo;

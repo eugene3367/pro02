@@ -1,5 +1,5 @@
 package kr.co.myshop.vo;
-
+//판매클래스
 public class Sales {
 	private int saleNo;		//판매번호
 	private String cusId;	//고객아이디

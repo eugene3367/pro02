@@ -1,7 +1,7 @@
 package kr.co.myshop.vo;
-//Custom -> CustomVO
+//고객 클래스
 public class Custom {
-	private String sucId;	//고객아이디
+	private String cusId;	//고객아이디
 	private String cusPw;	//고객비밀번호
 	private String cusName;	//고객명
 	private String address;	//고객주소
@@ -13,10 +13,10 @@ public class Custom {
 	
 	
 	public String getSucId() {
-		return sucId;
+		return cusId;
 	}
 	public void setSucId(String sucId) {
-		this.sucId = sucId;
+		this.cusId = sucId;
 	}
 	public String getCusPw() {
 		return cusPw;
