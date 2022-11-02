@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import kr.co.myshop.vo.Notice;
 
 
-@WebServlet("/GetBoardUpdateCtrl")
+@WebServlet("/UpdateBoardCtrl")
 public class UpdateBoardCtrl extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private final static String DRIVER = "com.mysql.cj.jdbc.Driver";

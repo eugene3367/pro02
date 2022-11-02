@@ -19,7 +19,7 @@
 %>
 <div class="content container">
 	<h2 class="title">공지사항 등록</h2>
-	<form name="frm1" id="frm1" action="InsertBoardProCtrl" method="post">	
+	<form name="frm1" id="frm1" action="../InsertBoardProCtrl" method="post">	
 		<table class="table">
 			<tbody>
 				<tr>

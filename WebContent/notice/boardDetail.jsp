@@ -45,8 +45,8 @@
 	</table>
 	<div class="btn-group">
 		<a href="GetBoardListCtrl" class="btn btn-info">목록으로</a>
-		<a href="DeleteBoardCtrl?notiNo=<%=vo.getNotiNo() %>" class="btn btn-info">글 삭제</a>
-		<a href="UpdateBoardCtrl?notiNo=<%=vo.getNotiNo() %>" class="btn btn-info">글 수정</a>
+		<a href="../DeleteBoardCtrl?notiNo=<%=vo.getNotiNo() %>" class="btn btn-info">글 삭제</a>
+		<a href="../UpdateBoardCtrl?notiNo=<%=vo.getNotiNo() %>" class="btn btn-info">글 수정</a>
 	</div>
 </div>
 <%@ include file="../footer.jsp" %>

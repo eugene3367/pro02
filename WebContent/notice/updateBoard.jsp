@@ -22,7 +22,7 @@
 %>
 <div class="content container" id="content">
 	<h2 class="title">공지사항 수정</h2>
-	<form name="frm1" id="frm1" action="UpdateBoardProCtrl" method="post">
+	<form name="frm1" id="frm1" action="../UpdateBoardProCtrl" method="post">
 		<table class="table">
 			<tbody>
 				<tr>

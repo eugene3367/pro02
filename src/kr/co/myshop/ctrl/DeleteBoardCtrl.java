@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/GetBoardDeleteCtrl")
+@WebServlet("/DeleteBoardCtrl")
 public class DeleteBoardCtrl extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private final static String DRIVER = "com.mysql.cj.jdbc.Driver";
@@ -35,7 +35,7 @@ public class DeleteBoardCtrl extends HttpServlet {
 			pstmt.setInt(1, notiNo);
 			cnt = pstmt.executeUpdate();
 			
-			if(cnt>0){
+			if(cnt>=1){
 				response.sendRedirect("GetBoardListCtrl");
 			}else{
 				response.sendRedirect("GetBoardDetailCtrl?notiNo="+notiNo);
