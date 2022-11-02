@@ -39,6 +39,10 @@
 		<% } %>	
 		</tbody>
 	</table>
+	<div class="btn-group">		
+		<a href="./notice/insertBoard.jsp" class="btn btn-info">글 등록</a>
+	</div>
 </div>
+<%@ include file="../footer.jsp" %>
 </body>
 </html>

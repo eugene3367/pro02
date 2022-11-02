@@ -11,6 +11,90 @@
 </head>
 <body>
 <%@ include file="header.jsp" %>
-
+<div class="container" id="content">
+	<ul class="row" id="best">
+		<li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+			<div class="card" style="width: 18rem;">
+			  <img src="./img/logo.svg" class="card-img-top" alt="더미이미지">
+			  <div class="card-body">
+			    <h5 class="card-title">Card title</h5>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Go somewhere</a>
+			  </div>
+			</div>
+		</li>
+		<li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+			<div class="card" style="width: 18rem;">
+			  <img src="./img/logo.svg" class="card-img-top" alt="더미이미지">
+			  <div class="card-body">
+			    <h5 class="card-title">Card title</h5>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Go somewhere</a>
+			  </div>
+			</div>
+		</li>
+		<li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+			<div class="card" style="width: 18rem;">
+			  <img src="./img/logo.svg" class="card-img-top" alt="더미이미지">
+			  <div class="card-body">
+			    <h5 class="card-title">Card title</h5>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Go somewhere</a>
+			  </div>
+			</div>
+		</li>
+		<li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+			<div class="card" style="width: 18rem;">
+			  <img src="./img/logo.svg" class="card-img-top" alt="더미이미지">
+			  <div class="card-body">
+			    <h5 class="card-title">Card title</h5>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Go somewhere</a>
+			  </div>
+			</div>
+		</li>
+		<li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+			<div class="card" style="width: 18rem;">
+			  <img src="./img/logo.svg" class="card-img-top" alt="더미이미지">
+			  <div class="card-body">
+			    <h5 class="card-title">Card title</h5>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Go somewhere</a>
+			  </div>
+			</div>
+		</li>
+		<li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+			<div class="card" style="width: 18rem;">
+			  <img src="./img/logo.svg" class="card-img-top" alt="더미이미지">
+			  <div class="card-body">
+			    <h5 class="card-title">Card title</h5>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Go somewhere</a>
+			  </div>
+			</div>
+		</li>
+		<li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+			<div class="card" style="width: 18rem;">
+			  <img src="./img/logo.svg" class="card-img-top" alt="더미이미지">
+			  <div class="card-body">
+			    <h5 class="card-title">Card title</h5>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Go somewhere</a>
+			  </div>
+			</div>
+		</li>
+		<li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+			<div class="card" style="width: 18rem;">
+			  <img src="./img/logo.svg" class="card-img-top" alt="더미이미지">
+			  <div class="card-body">
+			    <h5 class="card-title">Card title</h5>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Go somewhere</a>
+			  </div>
+			</div>
+		</li>
+	</ul>
+</div>
+<%@ include file="footer.jsp" %>
 </body>
 </html>

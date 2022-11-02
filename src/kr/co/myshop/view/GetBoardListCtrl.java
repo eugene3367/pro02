@@ -46,7 +46,7 @@ public class GetBoardListCtrl extends HttpServlet {
 					vo.setTitle(rs.getString("title"));
 					vo.setContent(rs.getString("content"));
 					vo.setAuthor(rs.getString("author"));
-					vo.setRegdate(rs.getString("resdate"));
+					vo.setRegdate(rs.getString("regdate"));
 					notiList.add(vo);
 		}
 		request.setAttribute("notiList", notiList);		
@@ -63,23 +63,4 @@ public class GetBoardListCtrl extends HttpServlet {
 	}
 }
 }
-
-		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
