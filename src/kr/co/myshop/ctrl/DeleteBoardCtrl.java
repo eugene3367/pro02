@@ -29,7 +29,7 @@ public class DeleteBoardCtrl extends HttpServlet {
 		int cnt = 0;
 		try{
 			Class.forName(DRIVER);
-			sql = "delete from notice where notino=?";
+			sql = "delete from notice where notiNo=?";
 			Connection con = DriverManager.getConnection(URL, USER, PASS);
 			PreparedStatement pstmt = con.prepareStatement(sql);
 			pstmt.setInt(1, notiNo);

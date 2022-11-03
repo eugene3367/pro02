@@ -10,9 +10,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-<style>
-.title { padding-top:36px; padding-bottom:20px; }
-</style>
+<link rel="stylesheet" href="common.css">
 </head>
 <body>
 <%@ include file="../header.jsp" %>

@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+
+.in_container {clear: both; width: 1600px; margin: 0 auto; }
+.in_container:after, .in_container:before { content:""; display:block; clear:both; }
+#logo { float: left;}
+ul.navbar-nav { padding-left: 370px; }
+.nav.justify-content-end { padding-left: 260px; }
+#content { margin-top: 80px; margin-bottom: 80px;}
+#row1, #row2 { border: 1px solid black; margin-left: 10px;}
+.col-xl-6 {-ms-flex: 0 0 50%;flex: 0 0 50%; max-width: 45%; }
+#row1 h6, #row2 h6 { text-align: center; line-height: 55px; padding-top: 40px;}
+#row1 p, #row2 p { text-align: center; padding-bottom: 37px; }
+#footerlogo { margin: 0 auto; display: block; width: 1200px; padding-top: 60px; padding-bottom: 60px; }
+#footercontent {width: 1200px; float: left; font-size: 0.1em; font-weight: 700;}
+.copyright { float: right; width: 200px; font-size: 0.1em; font-weight: 700; }
