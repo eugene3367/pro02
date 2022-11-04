@@ -9,9 +9,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-<style>
-.title { padding-top:36px; padding-bottom:20px; }
-</style>
+<link rel="stylesheet" href="common.css">
+</head>
 <body>
 <%@ include file="../header.jsp" %>
 <%
@@ -44,9 +43,11 @@
 		</tbody>
 	</table>
 	<div class="btn-group">
-		<a href="GetBoardListCtrl" class="btn btn-info">목록으로</a>
-		<a href="../DeleteBoardCtrl?notiNo=<%=vo.getNotiNo() %>" class="btn btn-info">글 삭제</a>
-		<a href="../UpdateBoardCtrl?notiNo=<%=vo.getNotiNo() %>" class="btn btn-info">글 수정</a>
+		<a href="<%=request.getContextPath() %>/GetBoardListCtrl" class="btn btn-info">목록으로</a>
+		<%-- <% if(sid.equals("admin")) { %> --%>
+		<a href="<%=request.getContextPath() %>/DeleteBoardCtrl?notiNo=<%=vo.getNotiNo() %>" class="btn btn-info">글 삭제</a>
+		<a href="<%=request.getContextPath() %>/UpdateBoardCtrl?notiNo=<%=vo.getNotiNo() %>" class="btn btn-info">글 수정</a>
+		<%-- <% } %> --%>
 	</div>
 </div>
 <%@ include file="../footer.jsp" %>

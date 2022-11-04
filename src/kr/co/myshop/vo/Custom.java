@@ -12,10 +12,10 @@ public class Custom {
 	private int visited;	//방문횟수
 	
 	
-	public String getSucId() {
+	public String getCusId() {
 		return cusId;
 	}
-	public void setSucId(String sucId) {
+	public void setCusId(String sucId) {
 		this.cusId = sucId;
 	}
 	public String getCusPw() {

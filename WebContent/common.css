@@ -1,5 +1,6 @@
 @CHARSET "UTF-8";
 
+
 .in_container {clear: both; width: 1600px; margin: 0 auto; }
 .in_container:after, .in_container:before { content:""; display:block; clear:both; }
 #logo { float: left;}
@@ -13,3 +14,4 @@ ul.navbar-nav { padding-left: 370px; }
 #footerlogo { margin: 0 auto; display: block; width: 1200px; padding-top: 60px; padding-bottom: 60px; }
 #footercontent {width: 1200px; float: left; font-size: 0.1em; font-weight: 700;}
 .copyright { float: right; width: 200px; font-size: 0.1em; font-weight: 700; }
+.ul, .ul li { list-style:none; }

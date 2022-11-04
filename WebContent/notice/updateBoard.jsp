@@ -10,10 +10,6 @@
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 <link rel="stylesheet" href="common.css">
-
-<style>
-.title { padding-top:36px; padding-bottom:20px; }
-</style>
 </head>
 <body>
 <%@ include file="../header.jsp" %>
@@ -22,7 +18,7 @@
 %>
 <div class="content container" id="content">
 	<h2 class="title">공지사항 수정</h2>
-	<form name="frm1" id="frm1" action="../UpdateBoardProCtrl" method="post">
+	<form name="frm1" id="frm1" action="<%=request.getContextPath() %>/UpdateBoardProCtrl" method="post">
 		<table class="table">
 			<tbody>
 				<tr>
@@ -44,7 +40,7 @@
 		<div class="btn-group">
 			<input type="submit" name="submit-btn" class="btn btn-info" value="글 수정">
 			<input type="reset" name="reset-btn" class="btn btn-info" value="취소">
-			<a href="GetBoardListCtrl" class="btn btn-danger">목록으로</a>
+			<a href="<%=request.getContextPath() %>/GetBoardListCtrl" class="btn btn-danger">목록으로</a>
 		</div>
 	</form>	
 </div>

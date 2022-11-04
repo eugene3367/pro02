@@ -28,7 +28,8 @@ public class InsertBoardProCtrl extends HttpServlet {
 		response.setContentType("text/html; charset=UTF-8");
 		String title = request.getParameter("title");
 		String content = request.getParameter("content");
-		String author = request.getParameter("author");
+		String author = request.getParameter("author");		
+		
 		try{
 			//데이터베이스 연결
 			Class.forName(DRIVER);
@@ -40,7 +41,7 @@ public class InsertBoardProCtrl extends HttpServlet {
 			pstmt.setString(3, author);
 			cnt =pstmt.executeUpdate();
 			
-			if(cnt>0){
+			if(cnt>=1){
 				response.sendRedirect("GetBoardListCtrl");
 			}else{
 				response.sendRedirect("./notice/insertBoard.jsp");

@@ -9,6 +9,10 @@
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 <link rel="stylesheet" href="common.css">
+<style>
+ul { list-style: none;}
+.card-img-top { width: 75%; margin: 5px 55px; }
+</style>
 </head>
 <body>
 <%@ include file="header.jsp" %>
