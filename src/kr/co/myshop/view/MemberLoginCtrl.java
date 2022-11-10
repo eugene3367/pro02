@@ -1,4 +1,4 @@
-package kr.co.myshop.ctrl;
+package kr.co.myshop.view;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
