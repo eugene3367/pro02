@@ -45,7 +45,7 @@
             </a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="<%=request.getContextPath() %>/GetBoardListCtrl">NOTICE</a>
-              <a class="dropdown-item" href="#">EVENT</a>
+              <a class="dropdown-item" href="<%=request.getContextPath() %>/GetQnaListCtrl.do">Q&A</a>
               <a class="dropdown-item" href="#">REVIEW</a>                      
             </div>        
           </li>     
@@ -65,6 +65,13 @@
 				  <li class="nav-item">
 				    <a class="nav-link" href="<%=request.getContextPath() %>/admin/index_admin.jsp">관리자 페이지로</a>
 				  </li>
+			   <% } else { %>
+			  <li class="nav-item">
+			    <a class="nav-link" href="<%=request.getContextPath() %>/GetMemberSalesInfoCtrl">구매내역</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="<%=request.getContextPath() %>/GetMemberCartListCtrl">장바구니</a>
+			  </li>
 			  <% } %>
 		  <% } else { %>
 			  <li class="nav-item">
