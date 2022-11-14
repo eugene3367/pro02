@@ -161,11 +161,11 @@ create table qnaa(
     content varchar(1000) not null,
     author varchar(20) not null,
     resdate datetime default now(),
-    lev int default 0,            -- 깊이
+    lev int default 0,            -- 깊이 ->질문(0), 답변(1)
     parno int not null,          -- 부모글 번호
     sec char(1)                     -- 비밀글 여부
 );
-insert into qnaa(title, content, author, lev, parno, sec)  values ("문의 합니다. 테스트 글1", "문의 합니다. 테스트 글1의 내용입니다.", "kkt09072", 0, 1, "N");
+insert into qnaa(title, content, author, lev, parno, sec)  values ("문의 합니다. 테스트 글1", "문의 합니다. 테스트 글1의 내용입니다.", "keg", 0, 1, "N");
 alter table qnaa add column visited int default 0; 
 alter table qnaa modify column parno int default ;
 select * from qnaa;

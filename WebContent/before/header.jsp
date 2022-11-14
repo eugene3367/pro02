@@ -1,12 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
 <%
 	String sid = (String) session.getAttribute("sid");
 	String sname = (String) session.getAttribute("sname");
 %>
-
-<p class="ban"><strong>첫 구매시 젤램프 0원</strong></p>
+    
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="in_container"> 
       <a class="navbar-brand" id="logo" href="<%=request.getContextPath() %>/index.jsp"><img alt="logo" src="<%=request.getContextPath() %>/img/logo.svg"> </a>
@@ -75,17 +73,16 @@
 			  </li>
 			  <% } %>
 		  <% } else { %>
-		  	  
 			  <li class="nav-item">
-			    <a class="nav-link active" href="<%=request.getContextPath() %>/custom/login.jsp"><img src="./img/account.svg" alt="로그인"></a>
+			    <a class="nav-link active" href="<%=request.getContextPath() %>/custom/login.jsp">로그인</a>
 			  </li>
 			  <li class="nav-item">
-			    <a class="nav-link" href="<%=request.getContextPath() %>/custom/membership.jsp"><img src="./img/add.png" alt="회원가입" width="23px" height="20px"></a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link active" href="bad.html"><img src="./img/bag.svg" alt="장바구니" width="23px" height="20px"></a>
+			    <a class="nav-link" href="<%=request.getContextPath() %>/custom/membership.jsp">회원가입</a>
 			  </li>
 		  <% } %>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#">Contact</a>
+		  </li>
 		</ul>
       </div>
      </div>

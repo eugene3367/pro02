@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82">
+    <defs>
+        <filter id="km1rmuxmna" x="0" y="0" width="82" height="82" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="그룹 994">
+        <g style="filter:url(#km1rmuxmna)">
+            <circle data-name="타원 13" cx="32" cy="32" r="32" transform="translate(9 6)" style="fill:#fff9ef"/>
+        </g>
+        <path data-name="패스 167" d="M42.001 24c-8.837 0-16 5.581-16 12.464 0 4.276 2.765 8.048 6.978 10.293l-1.772 6.653a.651.651 0 0 0 .966.659l7.847-5.239c.65.063 1.31.1 1.982.1 8.837 0 16-5.58 16-12.464S50.835 24 42.001 24z"/>
+    </g>
+</svg>
