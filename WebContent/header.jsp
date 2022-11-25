@@ -24,9 +24,9 @@
               GEL NAIL&PEDI
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">젤 네일</a>
-              <a class="dropdown-item" href="#">젤 페디</a>
-              <a class="dropdown-item" href="#">아이싱</a>          
+              <a class="dropdown-item" href="GetProductItemListCtrl?cateNo=1">젤 네일</a>
+              <a class="dropdown-item" href="GetProductItemListCtrl?cateNo=2">젤 페디</a>
+              <a class="dropdown-item" href="GetProductItemListCtrl?cateNo=3">아이싱</a>          
             </div>        
           </li>
           <li class="nav-item dropdown">
@@ -34,8 +34,8 @@
               NAIL POLISH
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">풀 컬러</a>
-              <a class="dropdown-item" href="#">스파클링</a>                    
+              <a class="dropdown-item" href="GetProductItemListCtrl?cateNo=4">풀 컬러</a>
+              <a class="dropdown-item" href="GetProductItemListCtrl?cateNo=5">스파클링</a>                    
             </div>        
           </li>
           <li class="nav-item dropdown">

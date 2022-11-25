@@ -13,6 +13,7 @@ public class CartListVO {
 	private String proPic;	//상품이미지1
 	private String proPic2;	//상품이미지2
 	private int amount; 	//재고수량
+	
 	public int getCartNo() {
 		return cartNo;
 	}

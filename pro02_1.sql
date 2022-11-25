@@ -64,12 +64,11 @@ create table category(
 );
 
 -- 카테고리 데이터 등록
-insert into category(cateName) values ("SUIT");
-insert into category(cateName) values ("OUTER");
-insert into category(cateName) values ("TOP");
-insert into category(cateName) values ("PANTS");
-insert into category(cateName) values ("SHOES");
-insert into category(cateName) values ("BAG");
+insert into category(cateName) values ("젤 네일");
+insert into category(cateName) values ("젤 페디");
+insert into category(cateName) values ("아이싱");
+insert into category(cateName) values ("풀 컬러");
+insert into category(cateName) values ("스파클링");
 
 select * from category;
 commit;
