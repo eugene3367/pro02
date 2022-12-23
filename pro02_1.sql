@@ -175,3 +175,4 @@ update qnaa set parno=2 where no=2;
 commit;
 select no from qnaa order by resdate desc limit 1;
 delete from qnaa where no >= 6;
+
