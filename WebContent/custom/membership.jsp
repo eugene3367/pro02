@@ -9,7 +9,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-<link rel="stylesheet" href="../common.css">
+<link rel="stylesheet" href="../css/reset.css">
+<%@ include file="../head.jsp" %>   
 </head>
 <body>
 <%@ include file="../header.jsp" %>
@@ -900,7 +901,7 @@
 	</article>
 	<div class="form-check">
 		<input type="checkbox" id="ck_item2" name="ck_item2" class="form-check-input">
-		<label for="ck_item2" class="form-check-label">개인정보처리방침에 동의</label><br><br>
+		<label for="ck_item2" class="form-check-label">개인정보처리방침에 동의</label>
 	</div><br><hr><br>
 	<div class="form-check">
 		<input type="checkbox" id="ck_item3" name="ck_item3" onclick="protocol()" class="form-check-input">
@@ -908,7 +909,7 @@
 	</div>
 	<br><hr><br>	
 	<div class="btn-group">
-		<button type="button" id="in_btn1" class="btn btn-primary">다음 단계</button>
+		<button type="button" id="in_btn1" class="btn btn-info">다음 단계</button>
 	</div>
 	<script>
 	var ck_item1 = document.getElementById("ck_item1");

@@ -10,7 +10,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/reset.css">
+<%@ include file="../head.jsp" %>   
 
 </head>
 <body>
@@ -35,7 +36,7 @@
 		<div class="btn-group">
 			<input type="submit" name="submit-btn" class="btn btn-info" value="로그인">
 			<input type="reset" name="reset-btn" class="btn btn-info" value="취소">
-			<a href="<%=request.getContextPath() %>/custom/membership.jsp" class="btn btn-danger">회원가입</a>
+			<a href="<%=request.getContextPath() %>/custom/membership.jsp" class="btn btn-info">회원가입</a>
 		</div>
 	</form>	
 </div>

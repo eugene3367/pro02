@@ -10,7 +10,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="../css/reset.css">
+<%@ include file="../head.jsp" %>   
 </head>
 <body>
 <%@ include file="../header.jsp" %>
@@ -19,7 +20,7 @@
 	ArrayList<Category> cateList = (ArrayList<Category>) request.getAttribute("cateList");
 %>
 <div class="content container" id="content">
-	<h2 class="title">제품 등록</h2>
+	<h2 class="title">제품 등록 수정</h2>
 	<form name="frm1" id="frm1" action="<%=request.getContextPath() %>/UpdateProductProCtrl" method="post" enctype="multipart/form-data">
 		<table class="table">
 			<tbody>
@@ -84,7 +85,7 @@
 		<div class="btn-group">
 			<input type="submit" name="submit-btn" class="btn btn-info" value="제품 정보 변경">
 			<input type="reset" name="reset-btn" class="btn btn-info" value="취소">
-			<a href="<%=request.getContextPath() %>/GetProductListCtrl" class="btn btn-danger">목록으로</a>
+			<a href="<%=request.getContextPath() %>/GetProductListCtrl" class="btn btn-info">목록으로</a>
 		</div>
 	</form>	
 	<script>

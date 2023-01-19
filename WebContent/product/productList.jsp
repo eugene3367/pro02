@@ -10,14 +10,15 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="../css/reset.css">
+<%@ include file="../head.jsp" %>   
 </head>
 <body>
 <%@ include file="../header.jsp" %>
 <%
 	List<Product> proList = (ArrayList<Product>) request.getAttribute("proList");
 %>
-<div class="content container" id="content">
+<div class="container-fluid" id="prolist-content">
 	<h2 class="title">제품 목록</h2>
 	<ul class="row" id="best">
 	<% for(int i=0;i<proList.size();i++) {
@@ -45,7 +46,7 @@
 	</ul>
 	<% if(sid.equals("admin")) { %>
 	<div class="btn-group">
-		<a href="<%=request.getContextPath() %>/InsertProductCategoryCtrl" class="btn btn-danger">상품 등록</a>
+		<a href="<%=request.getContextPath() %>/InsertProductCategoryCtrl" class="btn btn-info">상품 등록</a>
 	</div>
 	<% } %>
 </div>

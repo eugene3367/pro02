@@ -69,6 +69,8 @@ insert into category(cateName) values ("젤 페디");
 insert into category(cateName) values ("아이싱");
 insert into category(cateName) values ("풀 컬러");
 insert into category(cateName) values ("스파클링");
+insert into category(cateName) values ("네일케어");
+insert into category(cateName) values ("네일툴");
 
 select * from category;
 commit;
@@ -153,6 +155,8 @@ create table cart(
 );
 
 commit;
+select * from cart;
+
 
 create table qnaa(
     no int primary key auto_increment,
@@ -164,11 +168,13 @@ create table qnaa(
     parno int not null,          -- 부모글 번호
     sec char(1)                     -- 비밀글 여부
 );
+
 insert into qnaa(title, content, author, lev, parno, sec)  values ("문의 합니다. 테스트 글1", "문의 합니다. 테스트 글1의 내용입니다.", "keg", 0, 1, "N");
 alter table qnaa add column visited int default 0; 
-alter table qnaa modify column parno int default ;
+alter table qnaa modify column parno int default 1;
 select * from qnaa;
 drop table qnaa;
+desc qnaa;board
 select no from qnaa order by no desc limit 1;
 select no from qnaa order by resdate desc limit 1;
 update qnaa set parno=2 where no=2;

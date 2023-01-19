@@ -10,12 +10,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-<link rel="stylesheet" href="../common.css">
+<link rel="stylesheet" href="../css/reset.css">
+<%@ include file="../head.jsp" %>  
 
-<style>
-.title { padding-top:36px; padding-bottom:20px; }
-#content_row { min-height:calc(100vh - 84px); }
-</style>
 </head>
 <body>
 <%
@@ -26,7 +23,7 @@
 <div class="row" id="content_row">
     <%@ include file="admin_sidebar.jsp" %>
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-		<h2 class="title">공지사항 목록</h2>
+		<h2 class="title">회원 목록</h2>
 		<table class="table">
 			<thead>
 				<tr>

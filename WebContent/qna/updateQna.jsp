@@ -10,11 +10,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-<link rel="stylesheet" href="common.css">
-
-<style>
-.title { padding-top:36px; padding-bottom:20px; }
-</style>
+<link rel="stylesheet" href="../css/reset.css">
+<%@ include file="../head.jsp" %>   
 </head>
 <body>
 <%@ include file="../header.jsp" %>
@@ -31,7 +28,7 @@
 		<% } else { %>
 		<main class="content container">
 		<% } %>
-			<h2 class="title">질문 및 답변 상세 내용</h2>
+			<h2 class="title">질문 및 답변 수정</h2>
 			<form name="frm1" id="frm1" action="<%=request.getContextPath() %>/UpdateQnaProCtrl.do" method="post">
 				<input type="hidden" name="no" id="no" value="<%=vo.getNo() %>"/>
 				<table class="table">
@@ -73,8 +70,8 @@
 				</table>
 				<div class="btn-group">
 					<input type="submit" value="글 변경" class="btn btn-info">
-					<a href="<%=request.getContextPath() %>/GetQnaListCtrl.do" class="btn btn-primary">목록으로</a>
-					<a href="<%=request.getContextPath() %>/DeleteQnaCtrl.do?no=<%=vo.getNo() %>" class="btn btn-danger">글 삭제</a>
+					<a href="<%=request.getContextPath() %>/GetQnaListCtrl.do" class="btn btn-info">목록으로</a>
+					<a href="<%=request.getContextPath() %>/DeleteQnaCtrl.do?no=<%=vo.getNo() %>" class="btn btn-info">글 삭제</a>
 				</div>
 			</form>
 		</main>		

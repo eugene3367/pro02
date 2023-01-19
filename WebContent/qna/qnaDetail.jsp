@@ -10,11 +10,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="../css/reset.css">
+<%@ include file="../head.jsp" %>   
 
-<style>
-.title { padding-top:36px; padding-bottom:20px; }
-</style>
 </head>
 <body>
 <%@ include file="../header.jsp" %>
@@ -85,25 +83,25 @@
 				</tbody>
 			</table>
 			<div class="btn-group">
-				<a href="<%=request.getContextPath() %>/GetQnaListCtrl.do" class="btn btn-danger">목록으로</a>
+				<a href="<%=request.getContextPath() %>/GetQnaListCtrl.do" class="btn btn-info">목록으로</a>
 				<%
 					if(sid.equals("admin")) {
 						if(vo.getLev()==0){
 				%>
-					<a href='QnaReplyWriteCtrl.do?parno=<%=vo.getNo() %>' class="btn btn-primary">답변 하기</a>
+					<a href='QnaReplyWriteCtrl.do?parno=<%=vo.getNo() %>' class="btn btn-info">답변 하기</a>
 					<a href='UpdateQnaCtrl.do?no=<%=vo.getNo() %>' class="btn btn-info">글 수정</a>
-					<a href='DeleteQnaCtrl.do?parno=<%=vo.getNo() %>' class="btn btn-danger">글 삭제</a>
+					<a href='DeleteQnaCtrl.do?parno=<%=vo.getNo() %>' class="btn btn-info">글 삭제</a>
 				<%
 						} else {
 				%>
 					<a href='UpdateQnaCtrl.do?no=<%=vo.getNo() %>' class="btn btn-info">답글 수정</a>
-					<a href='DeleteQnaCtrl.do?no=<%=vo.getNo() %>' class="btn btn-danger">답글 삭제</a>
+					<a href='DeleteQnaCtrl.do?no=<%=vo.getNo() %>' class="btn btn-info">답글 삭제</a>
 				<%
 						}
 					} else if(sid.equals(vo.getAuthor())){
 				%>
 					<a href='UpdateQnaCtrl.do?no=<%=vo.getNo() %>' class="btn btn-info">글 수정</a>
-					<a href='DeleteQnaCtrl.do?parno=<%=vo.getNo() %>' class="btn btn-danger">글 삭제</a>
+					<a href='DeleteQnaCtrl.do?parno=<%=vo.getNo() %>' class="btn btn-info">글 삭제</a>
 				<%		
 					} else {
 				%>

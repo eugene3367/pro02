@@ -60,7 +60,7 @@ public class DirectUpdateCustomCtrl extends HttpServlet {
 			cnt = pstmt.executeUpdate();
 			
 			if(cnt>=1){
-				response.sendRedirect(request.getContextPath()+"/admin/index_admin.jsp");
+				response.sendRedirect(request.getContextPath()+"/GetCustomListCtrl");
 			} else {
 				response.sendRedirect(request.getContextPath()+"/GetCustomDetailCtrl?cusId="+cusId);
 			}

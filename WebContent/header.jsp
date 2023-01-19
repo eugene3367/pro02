@@ -6,27 +6,21 @@
 	String sname = (String) session.getAttribute("sname");
 %>
 
-<p class="ban"><strong>첫 구매시 젤램프 0원</strong></p>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<p class="ban"><strong><a class="nav-link top" href="<%=request.getContextPath() %>/other/event.jsp">첫 구매시 젤램프 0원</a></strong></p>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fff9ef;">
     <div class="in_container"> 
       <a class="navbar-brand" id="logo" href="<%=request.getContextPath() %>/index.jsp"><img alt="logo" src="<%=request.getContextPath() %>/img/logo.svg"> </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav" mr-auto>          
-          <li class="nav-item">
-            <a class="nav-link" href="best.jsp">BEST</a>
-          </li>
+        <ul class="navbar-nav mr-auto">          
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="nail&pedi.jsp" role="button" data-toggle="dropdown" aria-expanded="false">
               GEL NAIL&PEDI
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="GetProductItemListCtrl?cateNo=1">젤 네일</a>
-              <a class="dropdown-item" href="GetProductItemListCtrl?cateNo=2">젤 페디</a>
-              <a class="dropdown-item" href="GetProductItemListCtrl?cateNo=3">아이싱</a>          
+              <a class="dropdown-item" href="<%=request.getContextPath() %>/GetProductItemListCtrl?cateNo=1">젤 네일</a>
+              <a class="dropdown-item" href="<%=request.getContextPath() %>/GetProductItemListCtrl?cateNo=2">젤 페디</a>
+              <a class="dropdown-item" href="<%=request.getContextPath() %>/GetProductItemListCtrl?cateNo=3">아이싱</a>          
             </div>        
           </li>
           <li class="nav-item dropdown">
@@ -34,13 +28,25 @@
               NAIL POLISH
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="GetProductItemListCtrl?cateNo=4">풀 컬러</a>
-              <a class="dropdown-item" href="GetProductItemListCtrl?cateNo=5">스파클링</a>                    
+              <a class="dropdown-item" href="<%=request.getContextPath() %>/GetProductItemListCtrl?cateNo=4">풀 컬러</a>
+              <a class="dropdown-item" href="<%=request.getContextPath() %>/GetProductItemListCtrl?cateNo=5">스파클링</a>                    
             </div>        
           </li>
           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="nail polish.jsp" role="button" data-toggle="dropdown" aria-expanded="false">
+              CARE
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="<%=request.getContextPath() %>/GetProductItemListCtrl?cateNo=6">네일케어</a>
+              <a class="dropdown-item" href="<%=request.getContextPath() %>/GetProductItemListCtrl?cateNo=7">네일툴</a>                    
+            </div>        
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" href="<%=request.getContextPath() %>/other/brand.jsp">BRAND</a>
+          </li>                           
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-              EVENT
+              SERVICES
             </a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="<%=request.getContextPath() %>/GetBoardListCtrl">NOTICE</a>
@@ -48,8 +54,8 @@
             </div>        
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="review.jsp">REVIEW</a>
-          </li> 
+            <a class="nav-link" href="<%=request.getContextPath() %>/other/event.jsp">EVENT</a>
+          </li>     
         </ul>        
         <ul class="nav justify-content-end">
 		  <% if(sid!=null) { %>
@@ -64,7 +70,7 @@
 			  </li>
 			  <% if(sid.equals("admin")) { %>
 				  <li class="nav-item">
-				    <a class="nav-link" href="<%=request.getContextPath() %>/admin/index_admin.jsp">관리자 페이지로</a>
+				    <a class="nav-link" href="<%=request.getContextPath() %>/GetCustomListCtrl">관리자 페이지로</a>
 				  </li>
 			   <% } else { %>
 			  <li class="nav-item">
@@ -77,13 +83,13 @@
 		  <% } else { %>
 		  	  
 			  <li class="nav-item">
-			    <a class="nav-link active" href="<%=request.getContextPath() %>/custom/login.jsp"><img src="./img/account.svg" alt="로그인"></a>
+			    <a class="nav-link active" href="<%=request.getContextPath() %>/custom/login.jsp"><img src="<%=request.getContextPath() %>/img/account.svg" alt="로그인"></a>
 			  </li>
 			  <li class="nav-item">
-			    <a class="nav-link" href="<%=request.getContextPath() %>/custom/membership.jsp"><img src="./img/add.png" alt="회원가입" width="23px" height="20px"></a>
+			    <a class="nav-link" href="<%=request.getContextPath() %>/custom/membership.jsp"><img src="<%=request.getContextPath() %>/img/add.png" alt="회원가입" width="23px" height="20px"></a>
 			  </li>
 			  <li class="nav-item">
-			    <a class="nav-link active" href="bad.html"><img src="./img/bag.svg" alt="장바구니" width="23px" height="20px"></a>
+			    <a class="nav-link active" href="bad.html"><img src="<%=request.getContextPath() %>/img/bag.svg" alt="장바구니" width="23px" height="20px"></a>
 			  </li>
 		  <% } %>
 		</ul>

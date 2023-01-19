@@ -8,6 +8,7 @@ public class Parsel {
 	private String parselTel;	//(admin)배송기사연락처
 	private int parselState;	//(0:배송전,1:배송중,2:도착,3:구매결정)-배송상태
 	private String baleCode;	//화물코드
+	
 	public int getParselNo() {
 		return parselNo;
 	}
